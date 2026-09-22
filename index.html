@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#172B4D" />
+  <title>Destination: Distinguished | Oxford-Miami Community Toastmasters</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <nav class="topbar" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Destination Distinguished home">
+        <span class="brand-mark">✈</span>
+        <span>
+          <strong>Oxford-Miami Community Toastmasters</strong>
+          <small>Club Success Hub</small>
+        </span>
+      </a>
+      <div class="navlinks">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#journey">Journey</a>
+        <a href="#passport">Passport</a>
+        <a href="#brag-board">Brag Board</a>
+        <a href="#invitations">Invitations</a>
+        <a href="#goals">My Goals</a>
+      </div>
+    </nav>
+
+    <div id="top" class="hero-inner">
+      <p class="eyebrow">2026–2027 Program Year</p>
+      <h1>Destination: <span>Distinguished</span></h1>
+      <p class="tagline">Many Voices. One Vision. One Journey.</p>
+      <p class="season-line">The seasons may change, but our journey remains.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#journey">View Our Journey</a>
+        <button class="button secondary" id="celebrateDemoBtn">🎉 Test the Celebration</button>
+      </div>
+    </div>
+
+    <div class="travel-strip" aria-hidden="true">
+      <span>🧳 Pack your goals</span><span>🗺 Follow the roadmap</span><span>🛂 Collect your stamps</span><span>🏆 Celebrate the journey</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="dashboard" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">Club Success Plan</p>
+          <h2>Success Plan Dashboard</h2>
+        </div>
+        <p class="section-intro">A quick view of the milestones moving us toward our collective destination.</p>
+      </div>
+
+      <div id="metricCards" class="metrics-grid"></div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <div>
+            <p class="kicker">Education</p>
+            <h3>Pathways Progress</h3>
+          </div>
+          <div id="educationSummary" class="summary-pill"></div>
+        </div>
+        <div id="educationProgress" class="progress-list"></div>
+      </div>
+    </section>
+
+    <section id="journey" class="section alternate">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">Our Roadmap</p>
+          <h2>The Journey to Distinguished</h2>
+        </div>
+        <p class="section-intro">Every stop represents something members do together: learn, serve, invite, renew, mentor, and celebrate.</p>
+      </div>
+
+      <div id="journeyTrack" class="journey-track"></div>
+
+      <blockquote class="journey-quote">
+        “Destination Distinguished is not one person’s mission. It is the visible result of many members growing together.”
+      </blockquote>
+    </section>
+
+    <section id="passport" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">Collect the Evidence</p>
+          <h2>Virtual Passport Stamps</h2>
+        </div>
+        <p class="section-intro">Club-specific recognition makes progress visible. Earned stamps appear in full color; future stops remain ready for the journey.</p>
+      </div>
+
+      <div id="stampGrid" class="stamp-grid"></div>
+    </section>
+
+    <section id="brag-board" class="section alternate">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">Celebrate Loudly</p>
+          <h2>The Brag Board</h2>
+        </div>
+        <p class="section-intro">When a member levels up, we pause the trip and celebrate the traveler.</p>
+      </div>
+
+      <div id="bragGrid" class="brag-grid"></div>
+      <div class="center-actions">
+        <button class="button primary" id="latestCelebrationBtn">🎊 Celebrate Latest Achievement</button>
+        <button class="button outline" id="downloadBannerBtn">⬇ Create Social Celebration Banner</button>
+      </div>
+    </section>
+
+    <section id="invitations" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">Bring Someone Along</p>
+          <h2>Virtual Invitations</h2>
+        </div>
+        <p class="section-intro">Two invitations for two different moments: a direct membership invitation and a lower-pressure “come spend an hour with me.”</p>
+      </div>
+
+      <div id="invitationGrid" class="invitation-grid"></div>
+    </section>
+
+    <section id="goals" class="section alternate">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">My Personal Itinerary</p>
+          <h2>My Toastmasters Journey</h2>
+        </div>
+        <p class="section-intro">Your goals belong in the plan too. This form saves only in this browser.</p>
+      </div>
+
+      <form id="goalForm" class="goal-form">
+        <label>
+          <span>My name</span>
+          <input id="goalName" type="text" placeholder="Your name" />
+        </label>
+
+        <label>
+          <span>My destination: What do I want to accomplish through Toastmasters this year?</span>
+          <textarea id="goalDestination" rows="3" placeholder="Example: Become more confident presenting research to unfamiliar audiences."></textarea>
+        </label>
+
+        <div class="form-grid">
+          <label>
+            <span>My Pathways stop</span>
+            <input id="goalPathways" type="text" placeholder="Level, project, or speech goal" />
+          </label>
+          <label>
+            <span>My leadership stop</span>
+            <input id="goalLeadership" type="text" placeholder="Roles or leadership experience" />
+          </label>
+          <label>
+            <span>My travel companion</span>
+            <input id="goalSupport" type="text" placeholder="Someone I will encourage or mentor" />
+          </label>
+          <label>
+            <span>Bring-a-friend stop</span>
+            <input id="goalGuest" type="text" placeholder="Who might I invite?" />
+          </label>
+        </div>
+
+        <label class="checkline">
+          <input id="goalRenewal" type="checkbox" />
+          <span>I plan to complete my renewal/dues payment by September 30.</span>
+        </label>
+
+        <label>
+          <span>One way the club can support me</span>
+          <textarea id="goalClubSupport" rows="2" placeholder="What would help you reach your goal?"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="button primary" type="submit">💾 Save My Journey</button>
+          <button class="button outline" type="button" id="printGoalsBtn">🖨 Print / Save as PDF</button>
+          <button class="button ghost" type="button" id="clearGoalsBtn">Clear</button>
+        </div>
+        <p id="goalStatus" class="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section class="section closing">
+      <p class="eyebrow">Final Boarding Call</p>
+      <h2>Every member has a seat on this journey.</h2>
+      <p>Learn. Lead. Invite. Encourage. Renew. Celebrate.</p>
+      <strong>Next stop: Distinguished.</strong>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Oxford-Miami Community Toastmasters</strong> · Destination: Distinguished · 2026–2027</p>
+    <p class="small">Built as a static site for GitHub Pages. Update content in <code>club-data.js</code>.</p>
+  </footer>
+
+  <dialog id="celebrationDialog" class="celebration-dialog">
+    <button class="dialog-close" id="closeDialogBtn" aria-label="Close">×</button>
+    <p class="eyebrow dark">Look Who Leveled Up!</p>
+    <h2 id="dialogName">Member Name</h2>
+    <p id="dialogAchievement" class="dialog-achievement">Achievement</p>
+    <div id="dialogStamp" class="mini-stamp">STAMPED!</div>
+    <p class="dialog-tagline">Many Voices. One Vision. One Journey.</p>
+    <button class="button primary" id="replayCelebrationBtn">🎉 Celebrate Again</button>
+  </dialog>
+
+  <script src="club-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
