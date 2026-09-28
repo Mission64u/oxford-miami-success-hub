@@ -116,7 +116,7 @@ Toastmasters provides a supportive place to strengthen communication, public spe
 
 Come visit a meeting, meet our members, and see whether the club might be a good fit for your personal or professional goals.
 
-I hope you will join me for an upcoming meeting!
+I hope you will join me for an upcoming meeting! We meet Wednesdays at 12 Noon.
 
 Join us in person at Lane Library, 441 S. Locust St., Oxford, Ohio 45056, or online via Zoom.
 
@@ -135,7 +135,7 @@ I am part of Oxford-Miami Community Toastmasters, and I would love for you to vi
 
 No pressure to join and no preparation required. Just come spend an hour with me, see what we do, and enjoy the experience.
 
-I would be delighted to have you as my guest.
+I would be delighted to have you as my guest. We meet Wednesdays at 12 Noon
 
 Join us in person at Lane Library, 441 S. Locust St., Oxford, Ohio 45056, or online via Zoom.
 
