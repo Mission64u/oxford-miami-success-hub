@@ -42,37 +42,37 @@ const CLUB_DATA = {
       label: "Level 1 Awards",
       completed: 1,
       goal: 4,
-      projected: ["Kim Caudill Mullally", "Ann Littke", "Christopher Owens", "Ricardo Averbach", "Samantha Buchholz", "Susan Peery"]
+      projected: ["Kim C. M.", "Ann L.", "Christopher O.", "Ricardo A.", "Samantha B.", "Susan P"]
     },
     {
       label: "Level 2 Awards",
       completed: 0,
       goal: 2,
-      projected: ["Ann Littke"]
+      projected: ["Ann L."]
     },
     {
       label: "Additional Level 2 Awards",
       completed: 0,
       goal: 2,
-      projected: ["Kim Caudill Mullally", "Ruchelle A. Dunwoody", "Susan Peery"]
+      projected: ["Kim C. M.", "Ruchelle A. D.", "Susan P."]
     },
     {
       label: "Level 3 Awards",
       completed: 0,
       goal: 2,
-      projected: ["Adam McCoy", "Susan Peery"]
+      projected: ["Adam M.", "Susan P."]
     },
     {
       label: "Level 4 / Path Completion / DTM",
       completed: 0,
       goal: 1,
-      projected: ["Chiquita M. Hughes"]
+      projected: ["Chiquita H "]
     },
     {
       label: "Additional Level 4 / Path Completion / DTM",
       completed: 0,
       goal: 1,
-      projected: ["Margo Kissell"]
+      projected: ["Margo K."]
     }
   ],
 
@@ -97,7 +97,7 @@ const CLUB_DATA = {
 
   achievements: [
     {
-      name: "Kim Caudill Mullally",
+      name: "Kim C. M.",
       achievement: "Completed a Level 1 Award",
       date: "2026–2027",
       badge: "LEVEL 1"
